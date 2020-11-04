@@ -6,6 +6,7 @@ und Ron Autenrieb (9037538)
 ![Screenshot](res/UML.png)
 
 ##Test Suite
+
 ###Tests
 TestCase No. | Category | Äquivalenzklasse | Input | Output
 --- | --- | --- | --- | --- |
@@ -22,4 +23,5 @@ input | ÄK >10 | 11
 input | ÄK 1<=x<=10 | 7
 
 ###Separate Testfälle
+
 **Testfall 0**
