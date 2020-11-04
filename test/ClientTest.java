@@ -23,10 +23,18 @@ class ClientTest {
     @Test
     public void out() {
         Client c = new Client();
-        c.display(1);
-        assertEquals("Das Ergebnis der Berechnung: [eins]", outContent.toString());
+        c.display(-1);
+        assertNotEquals("Das Ergebnis der Berechnung: [minus eins]", outContent.toString().trim());
         outContent.reset();
-        c.display(2);
-        assertEquals("Das Ergebnis der Berechnung: [zwei]", outContent.toString());
+        c.display(11);
+        assertNotEquals("Das Ergebnis der Berechnung: [elf]", outContent.toString().trim());
+        outContent.reset();
+        c.display(0);
+        assertNotEquals("Das Ergebnis der Berechnung: [null]", outContent.toString().trim());
+        outContent.reset();
+        c.display(7);
+        assertEquals("Das Ergebnis der Berechnung: [sieben]", outContent.toString().trim());
+
+
     }
 }

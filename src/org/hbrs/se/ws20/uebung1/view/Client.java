@@ -16,7 +16,7 @@ public class Client {
         Translator translator = Factory.createGermanTranslator();
         String result = translator.translateNumber(aNumber);
 
-        System.out.print("Das Ergebnis der Berechnung: " +
+        System.out.println("Das Ergebnis der Berechnung: " +
         "["+result+"]");
 
     }
