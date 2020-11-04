@@ -2,7 +2,7 @@ package org.hbrs.se.ws20.uebung1.control;
 
 public class GermanTranslator implements Translator {
 
-    public String date = "Okt/2020"; // Default-Wert
+    public String date = "Nov/2020"; // Default-Wert
 
     /**
      * Methode zur Übersetzung einer Zahl in eine String-Repraesentation
