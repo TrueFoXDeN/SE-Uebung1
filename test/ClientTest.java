@@ -24,13 +24,13 @@ class ClientTest {
     public void out() {
         Client c = new Client();
         c.display(-1);
-        assertNotEquals("Das Ergebnis der Berechnung: [minus eins]", outContent.toString().trim());
+        assertEquals("Das Ergebnis der Berechnung: [Übersetzung der Zahl -1 nicht möglich (1.0)]", outContent.toString().trim());
         outContent.reset();
         c.display(11);
-        assertNotEquals("Das Ergebnis der Berechnung: [elf]", outContent.toString().trim());
+        assertEquals("Das Ergebnis der Berechnung: [Übersetzung der Zahl 11 nicht möglich (1.0)]", outContent.toString().trim());
         outContent.reset();
         c.display(0);
-        assertNotEquals("Das Ergebnis der Berechnung: [null]", outContent.toString().trim());
+        assertEquals("Das Ergebnis der Berechnung: [Übersetzung der Zahl 0 nicht möglich (1.0)]", outContent.toString().trim());
         outContent.reset();
         c.display(7);
         assertEquals("Das Ergebnis der Berechnung: [sieben]", outContent.toString().trim());
