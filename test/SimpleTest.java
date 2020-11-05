@@ -1,7 +1,5 @@
 import org.hbrs.se.ws20.uebung1.view.Client;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 public class SimpleTest {
     public static void main(String[] args) {
         Client c = new Client();
