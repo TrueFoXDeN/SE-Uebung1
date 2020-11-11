@@ -7,7 +7,7 @@ package org.hbrs.se.ws20.uebung1.control;
  *
  * @author saschaalda
  */
-
+// interface wurde auf public geändert
 public interface Translator {
 
     double version = 1.0; // Version des Interface
